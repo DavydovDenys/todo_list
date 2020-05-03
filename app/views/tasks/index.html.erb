@@ -1,0 +1,11 @@
+<div class="buffer-top">
+		<%= @tasks.each do |task| %>
+			<%= render partial: 'task', object: task %>
+		<% end %>
+
+		<hr />
+
+		<% @completed_tasks.each do |task| %>
+			<%= render partial: 'tasks', object: task %>
+		<% end %>	
+</div>

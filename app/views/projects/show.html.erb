@@ -2,8 +2,10 @@
 	<h1><%= @project.name %></h1>
 	<br>
 	<div class="buffer-top">
-		<%= link_to "Back to projects", projects_path, class: 'btn btn-primary' %>	
+		<%= link_to "Back to projects", projects_path, class: 'btn btn-primary' %>
+		<%= link_to "Add task", new_project_task_path(@project), class: 'btn btn-primary' %>	
 	</div>		
+
 </div>
 
 
