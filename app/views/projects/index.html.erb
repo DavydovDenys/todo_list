@@ -1,0 +1,13 @@
+<div class="col-md-12">
+	<h1>My Projects</h1>
+	<br>
+	<div class="buffer-top">
+		<%= link_to "New project", new_project_path, class: 'btn btn-primary' %>	
+	</div>
+	<br>
+	<div class="buffer-top">
+		<% @projects.each do |project| %>
+			<%= render partial: 'project', object: project %>
+		<% end %>
+	</div>	
+</div>

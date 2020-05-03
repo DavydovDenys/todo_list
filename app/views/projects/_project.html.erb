@@ -1,0 +1,7 @@
+<div class="project">
+	<p>
+		<span class="title"><%= link_to project.name, project_path(project) %></span>
+		<%= link_to "Edit", edit_project_path(project), class: 'action' %>
+		<%= link_to "Delete", project_path(project), method: :delete, data: {confirm: 'Do you want to delete? Are you sure?'}, class: 'action' %>
+	</p>	
+</div>

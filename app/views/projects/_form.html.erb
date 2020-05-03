@@ -1,0 +1,6 @@
+<div class="col-md-12">
+	<%= simple_form_for @project do |f| %>
+		<p><%= f.input :name, placeholder: 'enter project name' %></p>
+		<p><%= f.button :submit, class: 'btn btn-primary' %> <%= link_to 'Back', projects_path, class: 'btn btn-success' %></p>
+	<% end %>
+</div>

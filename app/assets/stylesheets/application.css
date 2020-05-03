@@ -13,3 +13,19 @@
  *= require_tree .
  *= require_self
  */
+
+
+.buffer-top {
+	margin-top: 1em;
+}
+
+.project {
+	margin-bottom: 1em;
+
+		.action {opacity: 0;}
+
+		&:hover .action {
+			opacity: 1;
+			transition: opacity 0.5s ease;
+		}
+}
