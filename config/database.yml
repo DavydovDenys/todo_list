@@ -20,7 +20,10 @@ default: &default
   # For details on connection pooling, see Rails configuration guide
   # https://guides.rubyonrails.org/configuring.html#database-pooling
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  username: den
+  password: <%= ENV['TODO_APP_DATABASE_PASSWORD'] %>
 
+  
 development:
   <<: *default
   database: garage_todo_list_development
@@ -81,5 +84,5 @@ test:
 production:
   <<: *default
   database: garage_todo_list_production
-  username: garage_todo_list
-  password: <%= ENV['GARAGE_TODO_LIST_DATABASE_PASSWORD'] %>
+  username: den
+  password: <%= ENV['TODO_APP_DATABASE_PASSWORD'] %>
